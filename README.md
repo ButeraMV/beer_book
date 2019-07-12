@@ -1,7 +1,6 @@
-# README
+# Beer Book
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application was created as a way to track different beers that you have tried and share it with your friends.
 
 Things you may want to cover:
 
