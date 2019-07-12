@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root to: 'welcome#index'
+
   # Account Creation
   get '/signup' => 'users#new'
   post '/users' => 'users#create'
@@ -7,4 +9,6 @@ Rails.application.routes.draw do
   get '/login' => 'sessions#new'
   post '/login' => 'sessions#create'
   get '/logout' => 'sessions#destroy'
+
+  resources :users, only: [:show]
 end
