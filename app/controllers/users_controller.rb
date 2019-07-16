@@ -14,7 +14,7 @@ class UsersController < ApplicationController
       flash[:success] = 'Successfully created user'
       redirect_to user_path(user)
     else
-      flash[:warning] = 'Invalid email or password'
+      flash[:error] = 'Invalid email or password'
       redirect_to '/signup'
     end
   end
